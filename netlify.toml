@@ -1,0 +1,36 @@
+[build]
+  command = "npm run build:netlify"
+  publish = ".netlify-static"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NEXT_PUBLIC_SITE_URL = "https://zhangyixuan.xyz"
+
+[[redirects]]
+  from = "/baidu_verify_codeva-IQ3BgBaZuO.html"
+  to = "/certificates/baidu_verify_codeva-IQ3BgBaZuO.txt"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    X-Frame-Options = "SAMEORIGIN"
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/certificates/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/baidu_verify_codeva-IQ3BgBaZuO.html"
+  [headers.values]
+    Content-Type = "text/html; charset=UTF-8"

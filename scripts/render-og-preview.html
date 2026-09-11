@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * { box-sizing: border-box; }
+      html, body { width: 1200px; height: 630px; margin: 0; overflow: hidden; }
+      body { position: relative; color: #f4fbff; font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; background: #020813; }
+      .background, .shade { position: absolute; inset: 0; width: 100%; height: 100%; }
+      .background { object-fit: cover; }
+      .shade { background: linear-gradient(90deg, rgba(1, 7, 17, .97) 0%, rgba(1, 8, 19, .89) 42%, rgba(1, 8, 18, .22) 76%); }
+      .frame { position: absolute; inset: 28px; border: 1px solid rgba(119, 222, 255, .33); }
+      .copy { position: relative; z-index: 1; width: 690px; padding: 92px 0 0 86px; }
+      .eyebrow { margin: 0 0 18px; color: #6ce1ff; font-family: Consolas, monospace; font-size: 18px; font-weight: 700; letter-spacing: 3px; }
+      h1 { margin: 0; font-size: 58px; letter-spacing: -.045em; line-height: 1.04; }
+      .cn { margin: 13px 0 0; color: #d9f8ff; font-size: 31px; font-weight: 700; letter-spacing: 5px; }
+      .role { margin: 30px 0 0; color: #edf9ff; font-size: 23px; font-weight: 650; line-height: 1.55; }
+      .line { width: 110px; height: 4px; margin-top: 28px; background: #70e6ff; box-shadow: 0 0 18px rgba(100, 222, 255, .55); }
+      .url { position: absolute; left: 86px; bottom: 77px; color: #a6d7e8; font-family: Consolas, monospace; font-size: 15px; letter-spacing: 2px; }
+    </style>
+  </head>
+  <body>
+    <img class="background" src="../public/og-background-v1.png" alt="" />
+    <div class="shade"></div><div class="frame"></div>
+    <main class="copy">
+      <p class="eyebrow">AI × AEROSPACE × INNOVATION</p>
+      <h1>Zhang Yixuan</h1>
+      <p class="cn">张译轩</p>
+      <p class="role">保定三中科技队队长<br />高中生科技创新实践者｜AI × 航空航天 × 智能系统</p>
+      <div class="line"></div>
+    </main>
+    <div class="url">ZHANGYIXUAN.XYZ</div>
+  </body>
+</html>
